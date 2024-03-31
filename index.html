@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: blueviolet;
+            color: white;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(87, 31, 139);
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover {
+            color: rgb(207, 207, 235);
+        }
+
+        .left {
+            font-size: 40px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        img {
+            height: 500px;
+            width: 500px;
+            border-radius: 5%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .leftsection {
+            font-size: 30px;
+            margin-top: 190px;
+        }
+
+        .btn {
+            padding: 12px;
+            background-color: rgb(24, 31, 92);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .blue {
+            color: rgb(44, 3, 54);
+        }
+
+        #element {
+            color: rgb(44, 3, 54);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Raj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Abouts.html" target="_blank">Abouts</a></li>
+                    <li><a href="./projects.html" target="_blank">Projects</a></li>
+                    <li><a href="./contact.html" target="_blank">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                <h1>Hello, I'm <span class="blue">Raj</span></h1>
+                <p >Aspiring</p>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a
+                            href="https://drive.google.com/file/d/15LoL2K4JlDzEyRHqS5_frMM8c4xS2Xvi/view?usp=sharing"
+                            target="_blank">Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/Raj-9033" target="_blank">Open GitHub</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/raj-choudhary-503217227/"
+                            target="_blank">Open Linkedin</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="https://cdn.dribbble.com/users/1396198/screenshots/4422089/media/4ec1c3ad4c7572823a3a89e473c4b272.gif"
+                    alt="coding screen gif" />
+            </div>
+        </section>
+    </main>
+    <div class="text-center">www.raj'sportfolio.com | All rights reserved ©</div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software developer', 'Data Engineer'],
+            typeSpeed: 65,
+        });
+    </script>
+</body>
+
+</html>
+
